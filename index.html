@@ -21,11 +21,101 @@
         p {
             font-size: 20px;
         }
+        .section {
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: left;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #00ff88;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #00ff88;
+            color: #0f0f0f;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .project-card {
+    background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #00ff88;
+}
+
+.project-card h3 {
+    color: #00ff88;
+    margin-bottom: 5px;
+}
+
+.project-card a {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.section a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
 
     </style>
 </head>
 <body>
     <h1>Hi, I'm Aman Pathan</h1>
     <p>I am a Frontend Developer from Latur, Maharashtra</p>
+
+    <div class="section">
+        <h2>About me</h2>
+        <p>I am a BCA Graduate passionate About frontend development. I Love Building projects that solve real problems.</p>
+
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">ReactJS</span>
+            <span class="skill">Git & GitHub</span>
+        </div>
+    </div>
+    <div class="section">
+        <h2>projects</h2>
+        <div class="project-card">
+            <h3>To-Do list App</h3>
+            <p>A task Management app build with ReactJS and LocalStorage.</p>
+           <a href="https://github.com/Amanulla4" target="_blank"> View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>A weather app using javascript and openWeather API</p>
+             <a href="https://github.com/Amanulla4" target="_blank"> View on GitHub</a>
+        </div>
+    </div>
+    <div class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:amanpathan221@gmail.com">amanpathan221@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Amanulla4" target="_blank">github.com/Amanulla4</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/amanulla-pathan" target="_blank">linkedin.com/in/amanulla-pathan</a></p>
+</div>
 </body>
 </html>
