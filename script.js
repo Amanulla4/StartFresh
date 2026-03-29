@@ -28,3 +28,17 @@ sections.forEach(section => {
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
 });
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
