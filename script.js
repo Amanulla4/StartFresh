@@ -42,3 +42,18 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const fills = document.querySelectorAll('.fill');
+
+const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const width = entry.target.getAttribute('data-width');
+            entry.target.style.width = width;
+        }
+    });
+}, { threshold: 0.5 });
+
+fills.forEach(fill => {
+    skillObserver.observe(fill);
+});
