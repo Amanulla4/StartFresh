@@ -5,6 +5,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding-top: 100px;
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
@@ -78,6 +80,7 @@ nav {
     background-color: #1a1a1a;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .logo{
@@ -165,4 +168,11 @@ html {
 
 .btn:hover {
     background-color: #00cc66;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
