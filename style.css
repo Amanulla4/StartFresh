@@ -212,3 +212,10 @@ html {
     background-color: #00ff88;
     color: #0f0f0f;
 }
+
+.project-card a {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 15px;
+}
